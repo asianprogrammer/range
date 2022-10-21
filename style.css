@@ -1,0 +1,72 @@
+* {
+    font-family: sans-serif;
+}
+
+/* range */
+.range {
+    width: 200px;
+    height: 5px;
+    border-radius: 25px;
+    background: #c4e0ff;
+    position: relative;
+    margin-top: 90px;
+    margin-left: 90px;
+}
+
+.range label {
+    top: 0;
+    position: absolute;
+}
+
+.range .touch-range {
+    top: -5px;
+    left: 0;
+    width: 15px;
+    cursor: grab;
+    height: 15px;
+    z-index: 999;
+    background: #0077ff;
+    position: absolute;
+    border-radius: 50%;
+    transition: scale .2s ease;
+}
+
+.range .touch-range:active {
+    transform: scale(1.3);
+    cursor: grabbing;
+    box-shadow: 0 0 0 10px rgba(0, 119, 255, 0.342);
+}
+
+.range-back {
+    width: 0px;
+    height: 5px;
+    position: absolute;
+    border-radius: 25px;
+    background: #0077ff;
+}
+
+.mb:hover {
+    height: 30px !important;
+}
+
+.mb {
+    width: 400px;
+    margin-top: 30px;
+    height: 10px;
+    transition: height .1s ease;
+    overflow: hidden;
+}
+
+.mb .m {
+    pointer-events: none;
+    opacity: 0;
+}
+.mb:active {
+    height: 30px !important;
+}
+.mb .touch-range ~ .range-back {
+    top: 0;
+    margin: 0;
+    border-radius: 0;
+    height: 30px !important;
+}
