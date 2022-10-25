@@ -22,7 +22,7 @@
     top: -5px;
     left: 0;
     width: 15px;
-    cursor: grab;
+    cursor: pointer;
     height: 15px;
     z-index: 999;
     background: #0077ff;
@@ -33,7 +33,7 @@
 
 .range .touch-range:active {
     transform: scale(1.3);
-    cursor: grabbing;
+    cursor: pointer;
     box-shadow: 0 0 0 10px rgba(0, 119, 255, 0.342);
 }
 
@@ -50,7 +50,7 @@
 }
 
 .mb {
-    width: 400px;
+    width: 200px;
     margin-top: 30px;
     height: 10px;
     transition: height .1s ease;
@@ -69,4 +69,24 @@
     margin: 0;
     border-radius: 0;
     height: 30px !important;
+}
+
+.al {
+    height: 3px;
+    background: #e0e0e0 !important;
+}
+
+.range .al {
+    background: #07B3FF !important;
+}
+
+.alt {
+    margin-top: -2px;
+    background: #fff !important;
+    border: solid 2px #07B3FF;
+}
+
+.alt:active {
+    margin-top: -2px;
+    box-shadow: none !important;
 }
