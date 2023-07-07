@@ -1,0 +1,33 @@
+# Vite output directory
+/dist
+
+# Node.js dependencies
+/node_modules
+
+# IDE files (adjust as needed)
+/.vscode
+/.idea
+
+# Log files
+/*.log
+
+# Cache and build files
+/.cache
+/.vite
+
+/*package-lock.json
+
+# Environment variables file (if applicable)
+/.env
+
+# Miscellaneous build files (adjust as needed)
+/build
+/out
+
+# Editor-specific files (adjust as needed)
+*.swp
+*.swo
+*.bak
+*.sublime-*
+*.sublime-workspace
+.DS_Store

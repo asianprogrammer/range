@@ -1,0 +1,27 @@
+{
+  "name": "range",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pure JS optimize as fast range as possible to create support for most of the device.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "npm run dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "js",
+    "range"
+  ],
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.3.9"
+  },
+  "author": "Asian Programmer",
+  "license": "GPL"
+}
