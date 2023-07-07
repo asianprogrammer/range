@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +7,10 @@
     <title>Range</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <span>range: <span id="range"></span></span>
-
+    <span class="title">range: <span id="range">0%</span></span>
+    <div class="title text-gray">Click out side range to stop it.</div>
 
     <!-- Desktop range -->
     <div class="range">
@@ -22,7 +20,7 @@
         </label>
     </div>
 
-    <!-- Movile range -->
+    <!-- Mobile range -->
     <div class="range mb">
         <label for="range">
             <div class="touch-range m"></div>
@@ -30,7 +28,7 @@
         </label>
     </div>
 
-    <!-- Movile range -->
+    <!-- Mobile range -->
     <div class="range al" data-range="">
         <label for="range">
             <div class="touch-range alt"></div>
@@ -39,17 +37,6 @@
     </div>
 
 
-    <br><br><br><br>
-    
-    <range id="rng"></range>
-    
-    <input-text ></input-text>
-    <input-email ></input-email>
-    <input-pass ></input-pass>
-    <input-pass placeholder="Hello"></input-pass>
-
-
     <script  type="module" src="script.js"></script>
 </body>
-
 </html>

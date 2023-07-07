@@ -90,3 +90,12 @@
     margin-top: -2px;
     box-shadow: none !important;
 }
+
+.title {
+    margin: 5px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-gray {
+    color: gray;
+}

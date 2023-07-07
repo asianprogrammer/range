@@ -11,7 +11,6 @@ let mouse = {
 }
 
 
-
 rangeTouch.forEach((e, i) => {
 
     ranges[i].addEventListener("mousedown", function () {
@@ -53,7 +52,7 @@ rangeTouch.forEach((e, i) => {
         let clintLeft = mouse.x - left;
 
 
-        // expreance
+        // checking logic
         if (clintLeft > 0 && clintLeft <= 199) {
             rangeTouch[i].style.left = (clintLeft - 5) + "px";
         }
@@ -75,7 +74,7 @@ function slide() {
         let rangeTouchSlide = (100 * (mouse.x - left)) / rangeM.width;
         let clintLeft = mouse.x - left;
 
-        // expreance
+        // Checking logic
         if (clintLeft > 0 && clintLeft <= 199) {
             rangeTouch[mouse.key].style.left = (clintLeft - 5) + "px";
         }
