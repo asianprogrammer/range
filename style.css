@@ -69,7 +69,7 @@
     height: 200px !important;
 }
 
-.mb.Y .touch-range ~ .range-back {
+.mb.Y .touch-range .range-back {
     width: 100% !important;
     height: 20px !important;
     background: red;
