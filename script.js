@@ -138,7 +138,7 @@ function RangeUI(targetElement = document.querySelector("body"), rangeType = "")
     `;
   } else {
     targetElement.innerHTML = `
-    <div data-move="false" data-range="0" class="range ${rangeType}">
+    <div data-move="false" data-range="0" class="range">
         <label for="range">
             <div class="touch-range"></div>
             <div class="range-back" name="range"></div>
