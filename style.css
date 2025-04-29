@@ -69,6 +69,12 @@
     height: 200px !important;
 }
 
+.mb.Y .touch-range ~ .range-back {
+    width: 100% !important;
+    height: 20px !important;
+    background: red;
+}
+
 .mb .m {
     pointer-events: none;
     opacity: 0;

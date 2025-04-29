@@ -123,6 +123,35 @@ window.addEventListener("touchcancel", () => {
   mouse.range = false;
 });
 
+function Range(targetElement = document.querySelector('body'), rangeType = ''){
+  rangeType.length > 1 ? '' : rangeType;
+  console.log(rangeType)
+  if(targetElement === "native"){
+    let NativeUI = document.querySelectorAll('Range');
+    NativeUI.forEach(el => {
+      el.innerHTML += `
+      <div data-move="false" data-range="0" class="range ${rangeType}">
+          <label for="range">
+              <div class="touch-range"></div>
+              <div class="range-back" name="range"></div>
+          </label>
+      </div>
+    `
+    })
+  }else {
+    targetElement.outerHTML = `
+    <div data-move="false" data-range="0" class="range ${rangeType}">
+        <label for="range">
+            <div class="touch-range ${rangeType}"></div>
+            <div class="range-back ${rangeType}" name="range"></div>
+        </label>
+    </div>
+    `
+  }
+}
+
+Range('native', 'mb')
+
 // ? This is like components
 // let rng = document.querySelectorAll("#range");
 
