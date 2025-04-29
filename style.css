@@ -57,6 +57,18 @@
     overflow: hidden;
 }
 
+.mb.Y {
+    width: 10px;
+    height: 200px;
+    transition: width .1s ease;
+}
+
+.mb.Y:hover,
+.mb.Y:active {
+    width: 30px;
+    height: 200px !important;
+}
+
 .mb .m {
     pointer-events: none;
     opacity: 0;
